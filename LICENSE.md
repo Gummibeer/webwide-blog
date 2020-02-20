@@ -26,8 +26,8 @@ The Webwide Blog core is powered by Pico CMS which is licensed under the MIT lic
 
 The theme (contents of `themes/webwide/`) is copyright (c) 2020 Adam Greenough with all rights reserved.
 
-Plugins (contents of `plugins`) will feature their own LICENSE file in their respective sub-folders.
+Plugins (contents of `plugins/`) will feature their own LICENSE file in their respective sub-folders.
 
 All theme and plugin contributors agree to assign copyright of their contributions to the project, to be licensed under the relevant terms as outlined above.
 
-The website content (contents of `content`) is copyright of their respective authors and has all rights reserved, unless otherwise noted. By contributing to the `content` folder, you are granting us with a non-exclusive, permanent, irrevocable, unlimited license to use, publish, or re-publish your content in connection with the Service. You retain copyright over the content.
+The website content (contents of `content/`) is copyright of their respective authors and has all rights reserved, unless otherwise noted. By contributing to the `content/` folder, you are granting us with a non-exclusive, permanent, irrevocable, unlimited license to use, publish, or re-publish your content in connection with the Service. You retain copyright over the content.
