@@ -8,6 +8,10 @@ html {
 	color: $text-regular;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: $text-dark;
+}
+
 .wrapper {
 	max-width: 1200px;
 	padding: 0 20px;
@@ -67,6 +71,27 @@ header.masthead {
 }
 
 section.hero {
-	background: $webwide-primary-dark;
-	padding: 200px 0;
+	background: $text-dark;
+	padding: 100px 0 110px;
+	text-align: center;
+	
+	.intro {
+		max-width: $wrapper-width-narrow;
+		margin: auto;
+		
+		h1 {
+			color: #fff;
+			font-size: 3rem;
+			line-height: 1.1;
+			margin: 0;
+		}
+		
+		p {
+			color: #fff;
+			opacity: 0.6;
+			font-size: 1.5rem;
+			line-height: 1.3;
+			margin-top: 1rem;
+		}
+	}
 }
