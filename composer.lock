@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "09d71db69b2e51097af92c0963be9d48",
+    "content-hash": "7cf6dc1ac40aeda7ddaf616cc1edadad",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -356,61 +356,6 @@
                 "picocms-plugin"
             ],
             "time": "2019-12-31T15:36:04+00:00"
-        },
-        {
-            "name": "picocms/pico-theme",
-            "version": "v2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/picocms/pico-theme.git",
-                "reference": "a79b9875b1d2dd182617454ad73af3c7caa47682"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/picocms/pico-theme/zipball/a79b9875b1d2dd182617454ad73af3c7caa47682",
-                "reference": "a79b9875b1d2dd182617454ad73af3c7caa47682",
-                "shasum": ""
-            },
-            "require": {
-                "picocms/pico": "self.version"
-            },
-            "type": "pico-theme",
-            "extra": {
-                "installer-name": "default",
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev",
-                    "dev-pico-2.1": "2.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Daniel Rudolf",
-                    "email": "picocms.org@daniel-rudolf.de",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "The Pico Community",
-                    "homepage": "http://picocms.org/"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/picocms/pico-theme/graphs/contributors"
-                }
-            ],
-            "description": "This is Pico's official default theme. Pico is a stupidly simple, blazing fast, flat file CMS.",
-            "homepage": "http://picocms.org/",
-            "keywords": [
-                "default-theme",
-                "pico",
-                "pico-theme",
-                "picocms",
-                "picocms-theme"
-            ],
-            "time": "2019-12-31T15:37:35+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",

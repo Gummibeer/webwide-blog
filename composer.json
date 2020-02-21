@@ -28,7 +28,8 @@
     "require": {
         "picocms/pico": "^2.1",
         "picocms/composer-installer": "^1.0",
-        "phrozenbyte/pico-robots": "^1.0"
+        "phrozenbyte/pico-robots": "^1.0",
+        "picocms/pico-deprecated": "^2.1"
     },
     "minimum-stability": "beta",
     "prefer-stable": true
