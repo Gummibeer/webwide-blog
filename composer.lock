@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7cf6dc1ac40aeda7ddaf616cc1edadad",
+    "content-hash": "c8023cd61fd053f7bca70eba0e2923ae",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -101,6 +101,56 @@
                 "parser"
             ],
             "time": "2018-05-08T21:54:32+00:00"
+        },
+        {
+            "name": "phrozenbyte/pico-file-prefixes",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhrozenByte/pico-file-prefixes.git",
+                "reference": "a0f1b5bfe47a20fdfaa9c0aaf1ff852e3509c3c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhrozenByte/pico-file-prefixes/zipball/a0f1b5bfe47a20fdfaa9c0aaf1ff852e3509c3c4",
+                "reference": "a0f1b5bfe47a20fdfaa9c0aaf1ff852e3509c3c4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "pico-plugin",
+            "autoload": {
+                "classmap": [
+                    "PicoFilePrefixes.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Rudolf",
+                    "homepage": "http://daniel-rudolf.de/",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/PhrozenByte/pico-file-prefixes/graphs/contributors"
+                }
+            ],
+            "description": "This is Pico's official file prefixes plugin, to drop file prefixes from page URLs. Pico is a stupidly simple, blazing fast, flat file CMS.",
+            "homepage": "http://picocms.org/",
+            "keywords": [
+                "URL-Shortener",
+                "pico",
+                "pico-file-prefixes",
+                "picocms",
+                "picocms-plugin",
+                "seo"
+            ],
+            "time": "2018-07-24T17:59:06+00:00"
         },
         {
             "name": "phrozenbyte/pico-robots",
