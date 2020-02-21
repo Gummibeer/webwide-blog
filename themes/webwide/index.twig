@@ -5,7 +5,7 @@
 		<div class="intro">
 			<!-- TODO: Matter.js hero here with the homepage node icons? -->
 			<h1>Discover quality content for web designers and developers.</h1>
-			<p>Tutorials, resources, industry news, case-studies, thought-pieces and more brought to you by the wonderful Webwide community.</p>
+			<p>Tutorials, resources, industry news, case-studies, thought-pieces and more brought to you by the wonderful Webwide community completely free.</p>
 		</div>
 	</div>
 </section>
@@ -15,5 +15,23 @@
 		{{ content }}
 	</div>
 </div>
+
+<script src="{{ theme_url }}/src/js/three.r95.min.js"></script>
+<script src="{{ theme_url }}/src/js/vanta.globe.min.js"></script>
+<script>
+    VANTA.GLOBE({
+      el: ".hero",
+      mouseControls: false,
+      touchControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: '#0165b9',
+      color2: '#0165b9',
+      size: 2.50,
+      backgroundColor: '#24272a'
+    })
+</script>
 
 {% include 'parts/footer.twig' %}

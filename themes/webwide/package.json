@@ -13,7 +13,7 @@
   },
   "scripts": {
     "watch": "npm-watch compile",
-    "compile": "uglifyjs src/js/* --mangle --output dist/scripts.js & node-sass src/scss/style.scss -o dist"
+    "compile": "uglifyjs src/js/scripts.js --mangle --output dist/scripts.js & node-sass src/scss/style.scss -o dist"
   },
   "author": "Adam Greenough",
   "license": "All Rights Reserved",

@@ -686,6 +686,9 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: #464e52; }
 
+body {
+  overflow-x: hidden; }
+
 h1, h2, h3, h4, h5, h6 {
   color: #232729; }
 
@@ -713,6 +716,16 @@ header.masthead {
     header.masthead .logo span {
       font-size: 1.2rem;
       color: #464e52; }
+      header.masthead .logo span > span {
+        background: #0076da;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        padding: 4px 5px;
+        line-height: 1;
+        vertical-align: middle;
+        margin-left: 0.15rem; }
   header.masthead .links ul {
     list-style: none;
     display: flex;
@@ -731,11 +744,16 @@ header.masthead {
 
 section.hero {
   background: #232729;
-  padding: 100px 0 110px;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden;
+  position: relative; }
   section.hero .intro {
     max-width: 800px;
-    margin: auto; }
+    margin: auto;
+    position: relative;
+    padding: 150px 0 160px;
+    z-index: 10;
+    pointer-events: none; }
     section.hero .intro h1 {
       color: #fff;
       font-size: 3rem;

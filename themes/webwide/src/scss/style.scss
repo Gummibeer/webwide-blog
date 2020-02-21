@@ -8,6 +8,10 @@ html {
 	color: $text-regular;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	color: $text-dark;
 }
@@ -43,6 +47,18 @@ header.masthead {
 		span {
 			font-size: 1.2rem;
 			color: $text-regular;
+			
+			> span {
+				background: $webwide-primary;
+				color: #fff;
+				border-radius: 5px;
+				font-size: 0.7rem;
+				text-transform: uppercase;
+				padding: 4px 5px;
+				line-height: 1;
+				vertical-align: middle;
+				margin-left: 0.15rem;
+			}
 		}
 	}
 	
@@ -72,12 +88,17 @@ header.masthead {
 
 section.hero {
 	background: $text-dark;
-	padding: 100px 0 110px;
 	text-align: center;
+	overflow: hidden;
+	position: relative;
 	
 	.intro {
 		max-width: $wrapper-width-narrow;
 		margin: auto;
+		position: relative;
+		padding: 150px 0 160px;
+		z-index: 10;
+		pointer-events: none;
 		
 		h1 {
 			color: #fff;
