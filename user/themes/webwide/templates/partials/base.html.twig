@@ -10,17 +10,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include 'partials/metadata.html.twig' %}
 
-    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
+    <link rel="icon" type="image/png" href="{{ theme_url }}/theme://images/favicon.png" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
-    <link href="{{ url('theme://dist/style.css') }}" rel="stylesheet" />
+    <link href="{{ theme_url }}/dist/style.css" rel="stylesheet" />
 </head>
 
 <body id="top" class="{% block body_classes %}{{ body_classes }}{% endblock %}">
     <header class="masthead">
         <div class="wrapper">
             <div class="logo">
-                <img src="{{ url('theme://images/webwide-dark.svg') }}" alt="Webwide" class="block" matter>
+                <img src="{{ theme_url }}/images/webwide-dark.svg" alt="Webwide" class="block" matter>
                 <span>Community Magazine <span>New!</span></span>
             </div>
 
@@ -33,39 +33,6 @@
             </nav>
         </div>
     </header>
-
-    <div id="page-wrapper">
-    {% block header %}
-        <section id="header" class="section">
-            <section class="container {{ grid_size }}">
-                <nav class="navbar">
-                    <section class="navbar-section logo">
-                        {% include 'partials/logo.html.twig' %}
-                    </section>
-                    <section class="navbar-section desktop-menu">
-
-                        <nav class="dropmenu animated">
-                        {% block header_navigation %}
-                            {% include 'partials/navigation.html.twig' %}
-                        {% endblock %}
-                        </nav>
-
-                        {% if config.plugins.login.enabled and grav.user.username %}
-                            <span class="login-status-wrapper"><i class="fa fa-user"></i> {% include 'partials/login-status.html.twig' %}</span>
-                        {% endif %}
-
-                    </section>
-                </nav>
-            </section>
-        </section>
-        <div class="mobile-menu">
-            <div class="button_container" id="toggle">
-                <span class="top"></span>
-                <span class="middle"></span>
-                <span class="bottom"></span>
-            </div>
-        </div>
-    {% endblock %}
 
     {% block hero %}{% endblock %}
 
