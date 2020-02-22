@@ -1,7 +1,26 @@
-# Grav Specific
+# Composer
+.composer
+vendor/*
+!*/vendor/*
+
+# Sass
 .sass-cache
-composer.lock
+
+# Grav Specific
+backup/*
+!backup/.*
 cache/*
+!cache/.*
+logs/*
+!logs/.*
+user/accounts/*
+!user/accounts/.*
+user/data/*
+!user/data/.*
+user/plugins/*
+!user/plugins/.*
+user/localhost/config/security.yaml
+user/config/security.yaml
 
 # OS Generated
 .DS_Store*
@@ -9,3 +28,13 @@ ehthumbs.db
 Icon?
 Thumbs.db
 *.swp
+
+# phpstorm
+.idea/*
+
+# testing stuff
+tests/_output/*
+tests/_support/_generated/*
+tests/cache/*
+tests/error.log
+system/templates/testing/*
