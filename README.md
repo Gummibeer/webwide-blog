@@ -1,4 +1,4 @@
-# Webwide Blog 🗞✨
+# Webwide Magazine 🗞✨
 Community-powered web designer, developer and maker blog by the wonderful people at [Webwide](https://webwide.io).
 
 ## Requirements
