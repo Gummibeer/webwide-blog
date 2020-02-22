@@ -1,6 +1,6 @@
 ---
 title: Home
-body_classes: title-center title-h1h2
+body_classes: title-center
 content:
     items: '@self.children'
     order:
@@ -10,3 +10,4 @@ content:
     pagination: true
 ---
 
+test

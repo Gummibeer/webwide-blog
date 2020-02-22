@@ -2,6 +2,7 @@
 title: I've Never finished a "Learn to Code" Program
 taxonomy:
     tag: [dog, cat]
+summary: This is the excerpt
 ---
 Recently, it really hit me:
 

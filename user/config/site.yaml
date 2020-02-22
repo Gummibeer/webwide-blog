@@ -1,7 +1,4 @@
-title: Grav
-author:
-  name: Joe Bloggs
-  email: 'joe@example.com'
+title: Webwide Magazine
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+    description: 'Discover quality content for web designers and developers. Tutorials, resources, industry news, case-studies, thought-pieces and more brought to you by the wonderful Webwide community completely free.'
 
