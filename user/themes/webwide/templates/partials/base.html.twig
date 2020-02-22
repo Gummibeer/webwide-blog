@@ -1,11 +1,8 @@
 {% set body_classes = body_class(['header-fixed', 'header-animated', 'header-dark', 'header-transparent', 'sticky-footer']) %}
-{% set grid_size = theme_var('grid-size') %}
-{% set compress = theme_var('production-mode') ? '.min.css' : '.css' %}
 {% use 'blocks/base.html.twig' %}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
-{% block head deferred %}
     <meta charset="utf-8" />
     <title>{% if page.title %}{{ page.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
 
@@ -15,29 +12,28 @@
 
     <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
-{% endblock head %}
 
-{% block stylesheets %}
-    {% do assets.addCss('theme://css-compiled/spectre'~compress) %}
-    {% if theme_var('spectre.exp') %}{% do assets.addCss('theme://css-compiled/spectre-exp'~compress)  %}{% endif %}
-    {% if theme_var('spectre.icons') %}{%  do assets.addCss('theme://css-compiled/spectre-icons'~compress) %}{% endif %}
-    {% do assets.addCss('theme://css-compiled/theme'~compress) %}
-    {% do assets.addCss('theme://css/custom.css') %}
-    {% do assets.addCss('theme://css/line-awesome.min.css') %}
-{% endblock %}
-
-{% block javascripts %}
-    {% do assets.addJs('jquery', 101) %}
-    {% do assets.addJs('theme://js/jquery.treemenu.js', {group:'bottom'}) %}
-    {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}
-{% endblock %}
-
-{% block assets deferred %}
-    {{ assets.css()|raw }}
-    {{ assets.js()|raw }}
-{% endblock %}
+    <link href="{{ url('theme://dist/style.css') }}" rel="stylesheet" />
 </head>
+
 <body id="top" class="{% block body_classes %}{{ body_classes }}{% endblock %}">
+    <header class="masthead">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="{{ url('theme://images/webwide-dark.svg') }}" alt="Webwide" class="block" matter>
+                <span>Community Magazine <span>New!</span></span>
+            </div>
+
+            <nav class="links">
+                <ul>
+                    <li><a href="/about/">About Webwide</a></li>
+                    <li><a href="https://webwide.io/" target="_blank">Visit Forums</a></li>
+                    <li><a href="/submit/" class="highlight">Submit Article</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <div id="page-wrapper">
     {% block header %}
         <section id="header" class="section">
