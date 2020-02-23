@@ -20,6 +20,7 @@ user/data/*
 !user/data/.*
 user/localhost/config/security.yaml
 user/config/security.yaml
+images/*
 
 # OS Generated
 .DS_Store*
