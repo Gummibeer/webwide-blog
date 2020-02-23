@@ -1,4 +1,16 @@
-title: Webwide Magazine
+title: Grav
+author:
+  name: Joe Bloggs
+  email: 'joe@test.com'
+blog:
+  route: ''
 metadata:
-    description: 'Discover quality content for web designers and developers. Tutorials, resources, industry news, case-studies, thought-pieces and more brought to you by the wonderful Webwide community completely free.'
+    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+
+taxonomies: [category,tag,month]
+redirects:
+    /changelog: /blog/the-urban-jungle
+routes:
+    /something/else: /blog/focus-and-blur
+    /another/one/(.*): /blog/$1
 
