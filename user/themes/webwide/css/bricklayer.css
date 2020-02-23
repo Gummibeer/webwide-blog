@@ -14,6 +14,7 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin: 0 -10px;
 }
 
 .bricklayer-column-sizer {
@@ -44,6 +45,6 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }

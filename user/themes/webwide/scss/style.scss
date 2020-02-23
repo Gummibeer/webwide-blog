@@ -12,6 +12,10 @@ body {
 	overflow-x: hidden;
 }
 
+.alt-bg {
+    background: lighten($webwide-primary, 55.5%);
+}
+
 h1, h2, h3, h4, h5, h6 {
 	color: $text-dark;
 }
@@ -24,30 +28,30 @@ h1, h2, h3, h4, h5, h6 {
 
 header.masthead {
 	background: #fff;
-	padding: 15px 0;	
-	
+	padding: 15px 0;
+
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	
+
 	.logo {
 		display: flex;
 		align-items: center;
 		flex: 1 0;
-		
+
 		img {
 			height: 1.4rem;
 			padding: 0 0.8rem 0.1rem 0;
 			border-right: solid $text-light 2px;
 			margin-right: 0.8rem;
 		}
-		
+
 		span {
 			font-size: 1.2rem;
 			color: $text-regular;
-			
+
 			> span {
 				background: $webwide-primary;
 				color: #fff;
@@ -61,7 +65,7 @@ header.masthead {
 			}
 		}
 	}
-	
+
 	.links {
 		ul {
 			list-style: none;
@@ -69,13 +73,13 @@ header.masthead {
 			align-items: center;
 			font-size: 0.95rem;
 			line-height: 1;
-			
+
 			a {
 				text-decoration: none;
 				color: $text-dark;
 				margin-left: 30px;
 			}
-			
+
 			.highlight {
 				border: $webwide-secondary solid 1px;
 				border-radius: 5px;
@@ -91,7 +95,7 @@ section.hero {
 	text-align: center;
 	overflow: hidden;
 	position: relative;
-	
+
 	.intro {
 		max-width: $wrapper-width-narrow;
 		margin: auto;
@@ -99,14 +103,14 @@ section.hero {
 		padding: 150px 0 160px;
 		z-index: 10;
 		pointer-events: none;
-		
+
 		h1 {
 			color: #fff;
 			font-size: 3rem;
 			line-height: 1.1;
 			margin: 0;
 		}
-		
+
 		p {
 			color: #fff;
 			opacity: 0.75;
@@ -115,4 +119,48 @@ section.hero {
 			margin-top: 1rem;
 		}
 	}
+}
+
+section.page-content {
+    .with-sidebar {
+        display: flex;
+
+        .main {
+            flex: 1 0;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding-left: 20px;
+            overflow: hidden;
+        }
+    }
+}
+
+.card {
+    background: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    .card-header, .card-footer {
+        padding: 20px;
+    }
+
+    .card-body {
+        padding: 0 20px;
+    }
+}
+
+.tag {
+    background: $webwide-primary;
+    padding: 0.3em 0.4em;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    vertical-align: middle;
+    text-decoration: none;
+
+    &:before {
+        content: '#';
+    }
 }
