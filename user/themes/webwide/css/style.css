@@ -797,3 +797,6 @@ section.page-content .with-sidebar {
   text-decoration: none; }
   .tag:before {
     content: '#'; }
+
+.page-content {
+  padding: 40px 0; }

@@ -4,6 +4,7 @@
 {% set blog = page.find(header_var('blog_url')|defined(theme_var('blog-page'))) %}
 {% set show_pagination = header_var('show_pagination', [page, blog])|defined(true) %}
 {% set tag = uri.params | split('tag:')[1] %}
+{% set page = uri.params | split('page:')[1] %}
 
 {% block stylesheets %}
     {% do assets.addCss('theme://css/bricklayer.css') %}
@@ -28,8 +29,8 @@
                 <div class="main">
                     {% if tag %}
                         <h2>Articles filed under <span class="tag">{{ tag }}</span></h2>
-                    {% else %}
-                        <h1>Latest Articles</h1>
+                    {% elseif page %}
+                        <h1>Page {{ page }}</h1>
                     {% endif %}
 
                     {% block item %}
