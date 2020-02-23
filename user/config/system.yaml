@@ -8,7 +8,7 @@ pages:
     twig: false
 
 cache:
-  enabled: true
+  enabled: false
   check:
     method: file
   driver: auto
@@ -28,7 +28,11 @@ assets:
   js_minify: true
 
 debugger:
-  enabled: false
+  enabled: true
   twig: true
   shutdown:
     close_connection: true
+
+errors:
+  display: 1
+  log: true

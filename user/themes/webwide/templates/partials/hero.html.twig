@@ -1,7 +1,27 @@
-<section id="{{ id }}" class="section modular-hero hero {{ page.header.hero_classes }} {{ page.header.background.parallax ? 'parallax' : '' }}" {% if hero_image %}style="background-image: url('{{ hero_image.url }}');"{% endif %}>
-    <div class="image-overlay"></div>
-    <section class="container {{ grid_size }}" style="text-align: {{ page.header.hero_align|default('center') }}">
-        {{ content|raw }}
-    </section>
-    <i id="to-start" class="pulse fa fa-angle-down"></i>
+<section class="hero">
+	<div class="wrapper">
+		<div class="intro">
+			<h1>Discover quality content for web designers and developers.</h1>
+			<p>Tutorials, resources, industry news, case-studies, thought-pieces and more brought to you by the wonderful Webwide community completely free.</p>
+		</div>
+	</div>
 </section>
+
+<!-- TODO: Stop this render blocking -->
+<script src="{{ theme_url }}/js/three.r95.min.js"></script>
+<script src="{{ theme_url }}/js/vanta.globe.min.js"></script>
+<script>
+    VANTA.GLOBE({
+      el: ".hero",
+      mouseControls: false,
+      touchControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: '#0165b9',
+      color2: '#0165b9',
+      size: 2.50,
+      backgroundColor: '#002a4e'
+    })
+</script>
