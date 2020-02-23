@@ -4,6 +4,7 @@
 {% set show_sidebar = header_var('show_sidebar', [page, blog])|defined(true)  %}
 {% set show_pagination = header_var('show_pagination', [page, blog])|defined(true) %}
 {% set hero_image_name = page.header.hero_image %}
+{% do track_views(page.route) %}
 
 {% block body %}
 <section id="body-wrapper" class="section blog-listing">
@@ -28,6 +29,7 @@
     </div>
 {% endif %}
     <div class="e-content">
+    {{ viewcounts[page.route] }} views
         {{ page.content|raw }}
     </div>
 
