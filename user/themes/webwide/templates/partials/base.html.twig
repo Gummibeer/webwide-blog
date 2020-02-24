@@ -31,29 +31,69 @@
 </head>
 
 <body id="top" class="{% block body_classes %}{{ body_classes }}{% endblock %}">
-    <header class="masthead">
-        <div class="wrapper">
-            <div class="logo">
-                <img src="{{ theme_url }}/images/webwide-dark.svg" alt="Webwide" class="block" matter>
-                <span>Community Magazine <span>New!</span></span>
-            </div>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="{{ base_url }}">
+            <img src="{{ theme_url }}/images/webwide-dark.svg" alt="Webwide" class="block" matter>
+            <span>Community Magazine <span>New!</span></span>
+        </a>
 
-            <nav class="links">
-                <ul>
-                    <li><a href="/about/">About Webwide</a></li>
-                    <li><a href="https://webwide.io/" target="_blank">Visit Forums</a></li>
-                    <li><a href="/submit/" class="highlight">Submit Article</a></li>
-                </ul>
-            </nav>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+
+          <a class="navbar-item">
+            Documentation
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
         </div>
-    </header>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Submit Article</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+    </nav>
 
     {% block body %}
 
-    {% endblock %}
-
-    {% block footer %}
-        {% include 'partials/footer.html.twig' %}
     {% endblock %}
 
 {% block bottom %}
