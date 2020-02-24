@@ -1,6 +1,42 @@
 @import "settings";
 @import "bulma/bulma";
 
+#masthead {
+.navbar-brand {
+    flex: 1 0;
+
+    .navbar-item {
+	display: flex;
+	align-items: center;
+	flex: 1 0;
+
+	img {
+		height: 1.3rem;
+        margin-top: -0.3rem;
+	}
+
+	> span {
+		font-size: 1.2rem;
+        border-left: solid $grey-lighter 2px;
+        padding-left: 0.8rem;
+        margin-left: 0.8rem;
+        display: inline-block;
+
+		> span {
+			background: $primary;
+			color: #fff;
+			border-radius: 5px;
+			font-size: 0.7rem;
+			text-transform: uppercase;
+			padding: 4px 5px;
+			line-height: 1;
+			vertical-align: middle;
+			margin-left: 0.15rem;
+		}
+	}
+}
+}
+}
 
 .alt-bg {
     background: lighten($primary, 55.5%);
@@ -33,4 +69,10 @@ section.hero {
 			margin-top: 1rem;
 		}
 	}
+}
+
+.tag {
+    &:before {
+        content: '#';
+    }
 }

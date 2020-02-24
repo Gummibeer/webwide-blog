@@ -1,4 +1,3 @@
-{% set body_classes = body_class(['header-fixed', 'header-animated', 'header-dark', 'header-transparent', 'sticky-footer']) %}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
@@ -19,9 +18,7 @@
     {% endblock %}
 
     {% block javascripts %}
-        {# do assets.addJs('jquery', 101) #}
-        {# do assets.addJs('theme://js/jquery.treemenu.js', {group:'bottom'}) #}
-        {# do assets.addJs('theme://js/site.js', {group:'bottom'}) #}
+        {% do assets.addJs('theme://js/scripts.js', {group:'bottom'}) %}
     {% endblock %}
 
     {% block assets deferred %}
@@ -30,12 +27,12 @@
     {% endblock %}
 </head>
 
-<body id="top" class="{% block body_classes %}{{ body_classes }}{% endblock %}">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+<body id="top" class="has-spaced-navbar-fixed-top">
+    <nav id="masthead" class="navbar is-fixed-top is-spaced" role="navigation" aria-label="main navigation">
         <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="{{ base_url }}">
-            <img src="{{ theme_url }}/images/webwide-dark.svg" alt="Webwide" class="block" matter>
+            <img src="{{ theme_url }}/images/webwide-dark.svg" alt="Webwide">
             <span>Community Magazine <span>New!</span></span>
         </a>
 
@@ -47,42 +44,17 @@
       </div>
 
       <div class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item">
+        <div class="navbar-end">
+        <a class="navbar-item">
             Home
           </a>
 
           <a class="navbar-item">
             Documentation
           </a>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              More
-            </a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                About
-              </a>
-              <a class="navbar-item">
-                Jobs
-              </a>
-              <a class="navbar-item">
-                Contact
-              </a>
-              <hr class="navbar-divider">
-              <a class="navbar-item">
-                Report an issue
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-primary">
+              <a class="button is-success">
                 <strong>Submit Article</strong>
               </a>
             </div>
