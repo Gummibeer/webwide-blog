@@ -19,10 +19,37 @@
 
 {% block body %}
 
+    <nav class="tag-strip">
+        <div class="wrapper">
+            <strong>Popular Tags</strong>
+            <div class="tag-strip-list">
+                <a href="#">#design</a>
+                <a href="#">#learntocode</a>
+                <a href="#">#javascript</a>
+                <a href="#">#php</a>
+                <a href="#">#beginner</a>
+                <a href="#">#career</a>
+                <a href="#">#css</a>
+                <a href="#">#webwide</a>
+                <a href="#">#hosting</a>
+                <a href="#">#seo</a>
+                <a href="#">#tutorial</a>
+                <a href="#">#productivity</a>
+                <a href="#">#laravel</a>
+                <a href="#">#opensource</a>
+                <a href="#">#showcase</a>
+                <a href="#">#html</a>
+                <a href="#">#react</a>
+                <a href="#">#python</a>
+                <a href="#">#security</a>
+            </div>
+        </div>
+    </nav>
+
     {% if tag == false %}
         {% include 'partials/hero.html.twig' %}
     {% endif %}
-    <section class="page-content alt-bg">
+    <section class="blog-list page-content alt-bg">
         <div class="wrapper">
 
             <div class="with-sidebar">
